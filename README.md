@@ -1,6 +1,13 @@
 # KGQA-datasets-generalization
 
-[![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](LICENSE.txt)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-blue.svg?style=flat)](https://github.com/KGQA/KGQA-datasets-generalization/pulls)
+[![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue.svg)](https://www.python.org/)
+[![Licence: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](https://github.com/KGQA/KGQA-datasets-generalization/blob/main/LICENSE)
+[![GitHub contributors](https://badgen.net/github/contributors/Naereen/Strapdown.js)](https://github.com/KGQA/KGQA-datasets-generalization/graphs/contributors/)
+[![GitHub issues](https://badgen.net/github/issues/Naereen/Strapdown.js/)](https://github.com/KGQA/KGQA-datasets-generalization/issues/)
+[![GitHub stars](https://badgen.net/github/stars/Naereen/Strapdown.js)](https://github.com/KGQA/KGQA-datasets-generalization/stargazers/)
+[![GitHub total-pull-requests](https://badgen.net/github/prs/Naereen/Strapdown.js)](https://github.com/KGQA/KGQA-datasets-generalization/pulls/)
+[![DOI: doi](https://img.shields.io/badge/DOI-10.1145/3477495.3531751-blue.svg?style=flat)](https://doi.org/10.1145/3477495.3531751)
 
 > Existing approaches on Question Answering over Knowledge Graphs (KGQA) have weak generalizability. That is often due to the standard i.i.d. assumption on the underlying dataset. Recently, three levels of generalization for KGQA were defined, namely _i.i.d._, _compositional_, _zero-shot_. We analyze 25 well-known KGQA datasets for 5 different Knowledge Graphs (KGs). We show that according to this definition many existing and online available KGQA datasets are either not suited to train a generalizable KGQA system or that the datasets are based on discontinued and out-dated KGs. Generating new datasets is a costly process and, thus, is not an alternative to smaller research groups and companies. In this work, we propose a mitigation method for re-splitting available KGQA datasets to enable their applicability to evaluate generalization, without any cost and manual effort. We test our hypothesis on three KGQA datasets, i.e., [LC-QuAD 1.0](http://lc-quad.sda.tech/lcquad1.0.html), [LC-QuAD 2.0](http://lc-quad.sda.tech/) and [QALD-9](https://github.com/ag-sc/QALD)
 
@@ -142,11 +149,20 @@ python resplit.py --dataset_id <dataset_id> --input_path <data_dir> --output_dir
 Please cite our paper if you use any tool or datasets provided in this repository:
 
 ````
-@article{jiang2022knowledge,
-  title={Knowledge Graph Question Answering Datasets and Their Generalizability: Are They Enough for Future Research?},
-  author={Jiang, Longquan and Usbeck, Ricardo},
-  journal={arXiv preprint arXiv:2205.06573},
-  year={2022}
+@inproceedings{jiang2022knowledge,
+author = {Jiang, Longquan and Usbeck, Ricardo},
+title = {Knowledge Graph Question Answering Datasets and Their Generalizability: Are They Enough for Future Research?},
+year = {2022},
+isbn = {9781450387323},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3477495.3531751},
+doi = {10.1145/3477495.3531751},
+booktitle = {Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+pages = {3209–3218},
+numpages = {10},
+location = {Madrid, Spain},
+series = {SIGIR '22}
 }
 ````
 
